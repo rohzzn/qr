@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="QR Code Generator" />
+    <meta name="author" content="Calatop" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b6b9586b26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <div id="in">
+          <p>QR Code Generator</p>
+          <input
+            type="text"
+            name=""
+            id="text"
+            placeholder="Type your text here"
+            required
+          />
+          <button onclick="qr()">
+            Generate
+          </button>
+        </div>
+      </div>
+      <div id="right">
+        <div id="image">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=neogorithm"
+            alt="QR CODE"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
